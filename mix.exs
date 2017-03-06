@@ -37,13 +37,10 @@ defmodule PhoenixStarter.Mixfile do
       :phoenix_ecto,
       :phoenix_html,
       :postgrex,
-      :ueberauth_github,
       :ueberauth_identity,
-      :ueberauth_slack,
       :ueberauth_google,
       :ueberauth_facebook,
       :ueberauth_twitter,
-      :ueberauth_fitbit,
       :gettext
     ]
   end
@@ -64,13 +61,10 @@ defmodule PhoenixStarter.Mixfile do
       {:guardian_db, "~> 0.4"},
       {:guardian, "~> 0.12"},
       {:ueberauth, git: "https://github.com/ueberauth/ueberauth.git", override: true},
-      {:ueberauth_github, git: "https://github.com/ueberauth/ueberauth_github.git"},
       {:ueberauth_identity, "~> 0.2"},
-      {:ueberauth_slack, "~> 0.3"},
       {:ueberauth_google, "~> 0.3"},
       {:ueberauth_facebook, "~> 0.4"},
       {:ueberauth_twitter, "~> 0.2"},
-      {:ueberauth_fitbit, "~> 0.2"},
       {:oauth, github: "tim/erlang-oauth"},
       {:comeonin, "~> 2.5"},
       {:cowboy, "~> 1.0"},

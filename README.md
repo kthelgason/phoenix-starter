@@ -137,17 +137,6 @@ The same goes for other providers.
 
 <hr>
 
-<img src="https://github.global.ssl.fastly.net/images/modules/logos_page/GitHub-Logo.png" width="200">
-- Go to [Account Settings](https://github.com/settings/profile)
-- Select **Applications** from the sidebar
-- Then inside **Developer applications** click on **Register new application**
-- Enter *Application Name* and *Homepage URL*
-- For *Authorization Callback URL*: http://localhost:3000/auth/github/callback
-- Click **Register application**
-- Now copy and paste *Client ID* and *Client Secret* keys into `.env` file
-
-<hr>
-
 <img src="https://g.twimg.com/ios_homescreen_icon.png" width="90">
 - Sign in at [https://apps.twitter.com/](https://apps.twitter.com/)
 - Click **Create a new application**
@@ -195,12 +184,9 @@ List of Packages
 | guardian_db                     | DB tracking for token validity.                                       |
 | ueberauth                       | An Elixir Authentication System for Plug-based Web Applications.      |
 | ueberauth_identity              | An Ueberauth strategy for basic username/password.                    |
-| ueberauth_github                | An Ueberauth strategy for Github authentication.                      |
-| ueberauth_slack                 | An Ueberauth strategy for Slack authentication.                       |
 | ueberauth_google                | An Ueberauth strategy for Google authentication.                      |
 | ueberauth_facebook              | An Ueberauth strategy for Facebook authentication.                    |
 | ueberauth_twitter               | An Ueberauth strategy for Twitter authentication.                     |
-| ueberauth_fitbit                | An Ueberauth strategy for Fitbit authentication.                      |
 | comeonin                        | Password hashing (bcrypt, pbkdf2_sha512) library for Elixir.          |
 | ex_admin                        | ExAdmin is an auto administration package for the Phoenix Framework   |
 
