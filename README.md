@@ -1,10 +1,6 @@
 ![](https://raw.githubusercontent.com/mjcloutier/mjcloutier.github.io/master/banner.png)
-Phoenix Starter [![docs](http://inch-ci.org/github/iNeedThis/phoenix-starter.svg?branch=master)](http://inch-ci.org/github/iNeedThis/phoenix-starter) [![Deps Status](http://hexfaktor.org/images/deps.svg)](http://hexfaktor.org/) [![Build Status](https://travis-ci.org/iNeedThis/phoenix-starter.svg?branch=master)](https://travis-ci.org/iNeedThis/phoenix-starter)
+Phoenix Starter
 =======================
-
-[![Gratipay User](https://img.shields.io/gratipay/user/~mjcloutier.svg)](https://gratipay.com/~mjcloutier/) [![Maintenance](https://img.shields.io/maintenance/yes/2016.svg)]() [![Join the chat at https://gitter.im/sahat/hackathon-starter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/iNeedThis/phoenix-starter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
-**Live Demo**: <a href="http://phoenixstarter.herokuapp.com" target="_blank">Phoenix Starter Demo</a>
 
 A boilerplate for **Phoenix Framework** web applications. Inspired by [Sahat's Hackathon Starter](https://github.com/sahat/hackathon-starter)
 
@@ -57,7 +53,7 @@ Features
 - [x] MVC Project Structure.
 - [x] Sass stylesheets (auto-compiled via Brunch).
 - [x] Bootstrap 4.
-- [ ] Contact Form (powered by Mailgun, Sendgrid or Mandrill).
+- ~[ ] Contact Form (powered by Mailgun, Sendgrid or Mandrill).~
 - [x] CSRF protection.
 
 - [ ] **User Account Management**
@@ -93,17 +89,6 @@ Prerequisites
 - [Elixir](http://elixir-lang.org/)
 - [Phoenix](http://www.phoenixframework.org/)
 - [Foreman](http://ddollar.github.io/foreman/)
-- [Heroku Toolbelt](https://toolbelt.heroku.com/)
-- Command Line Tools
- - <img src="http://deluge-torrent.org/images/apple-logo.gif" height="17">&nbsp;**Mac OS X:** [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12) (or **OS X 10.9+**: `xcode-select --install`)
- - <img src="http://dc942d419843af05523b-ff74ae13537a01be6cfec5927837dcfe.r14.cf1.rackcdn.com/wp-content/uploads/windows-8-50x50.jpg" height="17">&nbsp;**Windows:** [Visual Studio](https://www.visualstudio.com/products/visual-studio-community-vs)
- - <img src="https://lh5.googleusercontent.com/-2YS1ceHWyys/AAAAAAAAAAI/AAAAAAAAAAc/0LCb_tsTvmU/s46-c-k/photo.jpg" height="17">&nbsp;**Ubuntu** / <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Logo_Linux_Mint.png" height="17">&nbsp;**Linux Mint:** `sudo apt-get install build-essential`
- - <img src="http://i1-news.softpedia-static.com/images/extra/LINUX/small/slw218news1.png" height="17">&nbsp;**Fedora**: `sudo dnf groupinstall "Development Tools"`
- - <img src="https://en.opensuse.org/images/b/be/Logo-geeko_head.png" height="17">&nbsp;**OpenSUSE:** `sudo zypper install --type pattern devel_basis`
-
-**Note:** If you are new to Elixir or Phoenix, I recommend to watch
-[Elixir Conf 2014 - Rise of the Phoenix](https://www.youtube.com/watch?v=3jMbzGv_6tA)
-screencast by Confreaks, talk by Chris McCord that introduces Phoenix.
 
 Getting Started
 ---------------
@@ -225,31 +210,6 @@ The same goes for other providers.
 - From the dashboard, click on *Get SMTP credentials*
 - Copy and paste the default SMTP *Login* and *Password* into `.env` file
 
-Project Structure
------------------
-
-| Name                               | Description                                                  |
-| ---------------------------------- | ------------------------------------------------------------ |
-| **config**/config.exs              | Config settings for all environemnts.                        |
-| **config**/dev.exs                 | Development environment settings.                            |
-| **priv**/**migrations**/.exs       | Database migrations.                                         |
-| **priv**/seeds.exs                 | Seed your project with data.                                 |
-| **test**/                          | Test Framework.                                              |
-| **web/channels**/                  | Channels.                                                    |
-| **web/controllers**/               | Controllers.                                                 |
-| **web/models**/                    | Models.                                                      |
-| **web/views**/                     | Views.                                                       |
-| **web/templates**/                 | Templates.                                                   |
-| **web/auth**/                      | Authentication files for Guardian + Ueberauth.               |
-| **web/static**/                    | Static assets (fonts, css, js, img).                         |
-| **web/router.ex                    | Define your application routes.                              |
-| mix.exs                            | Your application external library dependencies.              |
-| package.json                       | Your Frontend dependencies.                                  |
-| Procfile                           | Process Management for Foreman and Heroku.                   |
-| Procfile.dev                       | Process Management for Development Environment.              |
-| .travis.yml                        | [Travis CI](https://travis-ci.org/) integration.             |
-| .envrc.example                     | Your API keys, tokens, passwords and database URI.           |
-
 List of Packages
 ----------------
 
@@ -273,124 +233,12 @@ List of Packages
 | comeonin                        | Password hashing (bcrypt, pbkdf2_sha512) library for Elixir.          |
 | ex_admin                        | ExAdmin is an auto administration package for the Phoenix Framework   |
 
-Useful Tools and Resources
---------------------------
-
-- [Awesome Elixir](https://github.com/h4cc/awesome-elixir) - A curated list of amazingly awesome Elixir and Erlang libraries, resources and shiny things.
-- [JavaScripting](http://www.javascripting.com/) - The Database of JavaScript Libraries
-- [JS Recipes](http://sahatyalkabov.com/jsrecipes/) - JavaScript tutorials for backend and frontend development.
-- [JavascriptOO](http://www.javascriptoo.com/) - A directory of JavaScript libraries with examples, CDN links, statistics, and videos.
-- [Favicon Generator](http://realfavicongenerator.net/) - Generate favicons for PC, Android, iOS, Windows 8.
-
-Recommended Design Resources
-----------------------------
-
-- [Code Guide](http://codeguide.co/) - Standards for developing flexible, durable, and sustainable HTML and CSS.
-- [Bootsnipp](http://bootsnipp.com/) - Code snippets for Bootstrap.
-- [UIBox](http://www.uibox.in) - Curated HTML, CSS, JS, UI components.
-- [Bootstrap Zero](https://www.bootstrapzero.com) - Free Bootstrap templates themes.
-- [Google Bootstrap](http://todc.github.io/todc-bootstrap/) - Google-styled theme for Bootstrap.
-- [Font Awesome Icons](http://fortawesome.github.io/Font-Awesome/icons/) - It's already part of the Hackathon Starter, so use this page as a reference.
-- [Colors](http://clrs.cc) - A nicer color palette for the web.
-- [Creative Button Styles](http://tympanus.net/Development/CreativeButtons/) - awesome button styles.
-- [Creative Link Effects](http://tympanus.net/Development/CreativeLinkEffects/) - Beautiful link effects in CSS.
-- [Medium Scroll Effect](http://codepen.io/andreasstorm/pen/pyjEh) - Fade in/out header background image as you scroll.
-- [GeoPattern](https://github.com/btmills/geopattern) - SVG background pattern generator.
-- [Trianglify](https://github.com/qrohlf/trianglify) - SVG low-poly background pattern generator.
-
-
-Recommended Hex Libraries
------------------------------
-- [Poison](https://hex.pm/packages/poison) - An incredibly fast, pure Elixir JSON library
-- [Decimal](https://hex.pm/packages/decimal) - Arbitrary precision decimal arithmetic for Elixir.
-- [Ex Cloudinary](https://hex.pm/packages/ex_cloudinary) - Image uploads for Cloudinary.
-- [Arc](https://github.com/stavro/arc_ecto) - Flexible file upload and attachment library for Elixir.
-
-Recommended Client-side Libraries
----------------------------------
-
-- [Framework7](http://www.idangero.us/framework7/) - Full Featured HTML Framework For Building iOS7 Apps.
-- [InstantClick](http://instantclick.io) - Makes your pages load instantly by pre-loading them on mouse hover.
-- [NProgress.js](https://github.com/rstacruz/nprogress) - Slim progress bars like on YouTube and Medium.
-- [Hover](https://github.com/IanLunn/Hover) - Awesome CSS3 animations on mouse hover.
-- [Magnific Popup](http://dimsemenov.com/plugins/magnific-popup/) - Responsive jQuery Lightbox Plugin.
-- [jQuery Raty](http://wbotelhos.com/raty/) - Star Rating Plugin.
-- [Headroom.js](http://wicky.nillia.ms/headroom.js/) - Hide your header until you need it.
-- [X-editable](http://vitalets.github.io/x-editable/) - Edit form elements inline.
-- [Offline.js](http://github.hubspot.com/offline/docs/welcome/) - Detect when user's internet connection goes offline.
-- [Alertify.js](http://fabien-d.github.io/alertify.js/) - Sweet looking alerts and browser dialogs.
-- [selectize.js](http://brianreavis.github.io/selectize.js/) - Styleable select elements and input tags.
-- [drop.js](http://github.hubspot.com/drop/docs/welcome/) -  Powerful Javascript and CSS library for creating dropdowns and other floating displays.
-- [scrollReveal.js](https://github.com/jlmakes/scrollReveal.js) - Declarative on-scroll reveal animations.
-
-Pro Tips
---------
-
-- When installing an NPM package, add a *--save* flag, and it will be automatically
-added to `package.json` as well. For example, `npm install --save moment`.
-
-FAQ
----
-
-### What is up with Foreman and ENVRC?
-Instead of using /config/prod.secret.exs I have used:
-```
-System.get_env("ENV_VARIABLE")
-```
-Throughout the project, in order to make the deploying simple and keep all
-necessary environment variables in one location, I used an `.envrc` file that
-will need to be sourced each time you run the project in development and when
-testing
-```bash
-$ source .envrc
-$ mix test
-```
-
-**Note:** There is a `Procfile.dev` available in the root of the project. it will
-auto source your `.envrc` and run `mix phoenix.server` for you.
-
-Deployment
-----------
-
-Once you are ready to deploy your app, you will need to create an account with
-a cloud platform to host it. These are not the only choices, but they are my top
-picks. From my experience, **Heroku** is the easiest to get started with, it will
-automatically restart *IF* it ever crashes..., zero-downtime
-deployments and custom domain support on free accounts.
-
-### 1-Step Deployment with Heroku
-
-<img src="http://blog.exadel.com/wp-content/uploads/2013/10/heroku-Logo-1.jpg" width="200">
-- Download and install [Heroku Toolbelt](https://toolbelt.heroku.com/)
-- In terminal, run `heroku login` and enter your Heroku credentials
-- From *your app* directory run `heroku create`
-- Run `heroku addons:create postgresql`.  This will set up the Postgresql add-on and configure the `DATABASE_URI` environment variable in your Heroku app for you.
-- Lastly, do `git push heroku master`.  Done!
-
-**Note:** To install Heroku add-ons your account must be verified.
-
-Changelog
----------
-
-### 0.0.2 (September 11, 2016)
-- Revive Project & Update dependencies.
-
-### 0.0.1 (February 20, 2016)
-- Initial Commit of Project
-
-Contributing
-------------
-
-If something is unclear, confusing, or needs to be refactored, please let me know.
-Pull requests are always welcome, but due to the opinionated nature of this
-project, I cannot accept every pull request. Please open an issue before
-submitting a pull request.
-
 License
 -------
 
 The MIT License (MIT)
 
+Copyright (c) 2017 Kári Tristan Helgason
 Copyright (c) 2016 Michael Cloutier
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
