@@ -2,26 +2,8 @@
 Phoenix Starter
 =======================
 
-A boilerplate for **Phoenix Framework** web applications. Inspired by [Sahat's Hackathon Starter](https://github.com/sahat/hackathon-starter)
-
-> If you have attended any hackathons in the past, then you know how much time it takes to
-> get a project started: decide on what to build, pick a programming language, pick a web framework,
-> pick a CSS framework. A while later, you might have an initial project up on GitHub and only then
-> can other team members start contributing. Or how about doing something as simple as *Sign in with Facebook*
-> authentication? You can spend hours on it if you are not familiar with how OAuth 2.0 works.
-- [Sahat](https://github.com/sahat)
-
-My primary focus is on **simplicity** and **ease of use**. Another goal is to be as
-**generic** and **reusable** as possible to cover most use cases of starter web apps. A SaaS solution
-for a feature should be considered higher priority before writing your own solution (i.e. Cloudinary
-for Avatar Uploads). In the worst case you can use this as a learning guide for your projects,
-if for example you are only interested in **Sign in with Github** authentication and nothing else.
-
-![](https://raw.githubusercontent.com/mjcloutier/mjcloutier.github.io/master/phoenix-starter-home.png)
-
-![](https://raw.githubusercontent.com/mjcloutier/mjcloutier.github.io/master/phoenix-starter-login.png)
-
-![](https://raw.githubusercontent.com/mjcloutier/mjcloutier.github.io/master/phoenix-starter-signup.png)
+A boilerplate for **Phoenix Framework** web applications. Forked from [mjcloutier](https://github.com/sahat/hackathon-starter)
+but modified to have a smaller scope and more targeted at my own use case.
 
 Table of Contents
 -----------------
@@ -30,30 +12,19 @@ Table of Contents
 - [Prerequisites](#prerequisites)
 - [Getting Started](#getting-started)
 - [Obtaining API Keys](#obtaining-api-keys)
-- [Project Structure](#project-structure)
 - [List of Packages](#list-of-packages)
-- [Useful Tools and Resources](#useful-tools-and-resources)
-- [Recommended Design Resources](#recommended-design-resources)
-- [Recommended Hex Libraries](#recommended-hex-libraries)
-- [Recommended Client-side Libraries](#recommended-client-side-libraries)
-- [Pro Tips](#pro-tips)
-- [FAQ](#faq)
-- [Deployment](#deployment)
-- [Changelog](#changelog)
-- [Contributing](#contributing)
 - [License](#license)
 
 Features
 --------
 
 - [x] **Local Authentication** using Email and Password.
-- [x] **OAuth 2.0 Authentication** via Facebook, Google, GitHub, Slack.
+- [x] **OAuth 2.0 Authentication** via Facebook or Google.
 - [x] **OAuth 1.0a Authentication** via Twitter.
 - [x] Flash notifications.
 - [x] MVC Project Structure.
 - [x] Sass stylesheets (auto-compiled via Brunch).
 - [x] Bootstrap 4.
-- ~[ ] Contact Form (powered by Mailgun, Sendgrid or Mandrill).~
 - [x] CSRF protection.
 
 - [ ] **User Account Management**
@@ -239,6 +210,7 @@ License
 The MIT License (MIT)
 
 Copyright (c) 2017 Kári Tristan Helgason
+
 Copyright (c) 2016 Michael Cloutier
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
