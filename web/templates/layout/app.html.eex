@@ -26,7 +26,6 @@
 
     <div class="content">
       <div class="container">
-        <%= render "impersonation.html", conn: @conn %>
         <%= render "header.html", conn: @conn, current_user: @current_user %>
         <%= render "flash.html", conn: @conn %>
 
