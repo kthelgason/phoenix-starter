@@ -55,7 +55,6 @@ defmodule PhoenixStarter.Router do
     pipe_through [:browser, :browser_auth, :impersonation_browser_auth]
 
     get "/", PageController, :index
-    get "/about", PageController, :about
     get "/channels", PageController, :channels
     get "/private", PrivatePageController, :index
 
