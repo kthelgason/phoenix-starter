@@ -11,10 +11,13 @@ defmodule PhoenixStarter.AuthController do
   plug Ueberauth
 
   def login(conn, _params, current_user, _claims) do
-    render conn, "login.html", current_user: current_user, current_auths: auths(current_user)
+    render conn, "login.html",
+      current_user: current_user,
+      current_auths: auths(current_user)
   end
 
-  def callback(%Plug.Conn{assigns: %{ueberauth_failure: fails}} = conn, _params, current_user, _claims) do
+  def callback(%Plug.Conn{assigns: %{ueberauth_failure: fails}} = conn,
+    _params, current_user, _claims) do
     conn
     |> put_flash(:error, hd(fails.errors).message)
     |> render("login.html", current_user: current_user, current_auths: auths(current_user))
